@@ -17,6 +17,7 @@ KAIM-WEEK-11/
 │ └── processed/ # Processed/cleaned data (gitignored)
 ├── notebooks/
 │ └── README.md # Documentation for notebooks
+│ └── 1_TSLA_BND_SPY_Analysis.ipynb
 ├── scripts/
 │ └── README.md # Documentation for scripts
 ├── src/
@@ -45,6 +46,10 @@ KAIM-WEEK-11/
 ---
 
 ## Key Task Completed 
+
+### ✅ Task 1: Preprocess and Explore the Data
+
+Downloaded TSLA, BND, and SPY daily OHLCV data (2015–2025) via yfinance. Cleaned and aligned datasets, handled missing values, and calculated daily returns. Visualized prices, returns, and rolling volatility. Identified outliers, tested stationarity (ADF), and computed key risk metrics (annualized returns, volatility, Sharpe ratio, VaR).
 
 ---
 
