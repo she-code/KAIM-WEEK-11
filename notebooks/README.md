@@ -13,3 +13,13 @@ This folder contains Jupyter notebooks illustrating the step-by-step process of 
 - Tested stationarity of prices and returns using the Augmented Dickey-Fuller (ADF) test
 - Computed key risk metrics: annualized return, volatility, Sharpe ratio, and Value at Risk (VaR)
 - Summarized findings to inform portfolio risk/return trade-off analysis
+
+### 2_TSLA_Forecasting_Models.ipynb
+
+- Implemented and compared ARIMA (2,1,2) and LSTM models for TSLA price forecasting
+- Performed train-test split (2015-2023 train, 2024-2025 test) preserving temporal order
+- Optimized ARIMA parameters via ACF/PACF analysis and manual tuning
+- Designed LSTM architecture with 2 layers (50 units each) and 30-day lookback window
+- Evaluated models using MAE, RMSE, and MAPE metrics
+- Visualized predictions vs actuals with confidence intervals (ARIMA) and prediction bands
+- Selected LSTM as best model (MAE: $13.66, MAPE: 4.89%) and saved for deployment
