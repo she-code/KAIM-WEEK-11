@@ -1,5 +1,5 @@
 # Notebooks
-
+- 
 Notebooks
 This folder contains Jupyter notebooks illustrating the step-by-step process of analyzing historical performance, volatility, and risk metrics for TSLA, BND, and SPY, preparing the data for further portfolio modeling.
 
@@ -23,3 +23,13 @@ This folder contains Jupyter notebooks illustrating the step-by-step process of 
 - Evaluated models using MAE, RMSE, and MAPE metrics
 - Visualized predictions vs actuals with confidence intervals (ARIMA) and prediction bands
 - Selected LSTM as best model (MAE: $13.66, MAPE: 4.89%) and saved for deployment
+
+### 3_TSLA_Future_Forecast_Analysis.ipynb
+
+- Generated 6-month LSTM forecast using best model
+- Prepared input from last 30 days of TSLA data
+- Created business-day timeline (126 trading days)
+- Visualized forecast with confidence bands (±1 std dev)
+- Identified key levels: support/resistance zones
+- Saved results as TSLA_6mo_forecast.csv
+- Noted model limitations for risk awareness
