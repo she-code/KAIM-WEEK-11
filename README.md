@@ -15,9 +15,11 @@ KAIM-WEEK-11/
 ├── data/
 │ ├── raw/ # Raw data (should never be modified)
 │ └── processed/ # Processed/cleaned data (gitignored)
+├── models/
 ├── notebooks/
 │ └── README.md # Documentation for notebooks
-│ └── 1_TSLA_BND_SPY_Analysis.ipynb
+│ └── 1_TSLA_BND_SPY_Analysis.ipynb - fetches finance data from yfinance 
+│ └── 2_TSLA_Forecasting_Models.ipynb - builds and compares models
 ├── scripts/
 │ └── README.md # Documentation for scripts
 ├── src/
@@ -42,6 +44,7 @@ KAIM-WEEK-11/
 - Jupyter Notebook  
 - Git  
 - YFinance
+- Tensorflow
 
 ---
 
@@ -50,6 +53,10 @@ KAIM-WEEK-11/
 ### ✅ Task 1: Preprocess and Explore the Data
 
 Downloaded TSLA, BND, and SPY daily OHLCV data (2015–2025) via yfinance. Cleaned and aligned datasets, handled missing values, and calculated daily returns. Visualized prices, returns, and rolling volatility. Identified outliers, tested stationarity (ADF), and computed key risk metrics (annualized returns, volatility, Sharpe ratio, VaR).
+
+### ✅ Task 2: Develop Time Series Forecasting Models
+
+Implemented and compared ARIMA and LSTM models to forecast TSLA stock prices (2015–2025). The dataset was split chronologically into training (2015–2023) and testing (2024–2025) sets. After preprocessing and normalization, an ARIMA(2,1,2) model was developed using ACF/PACF for parameter selection. A deeper LSTM model with two 50-unit layers and a 30-day lookback window was trained with early stopping to avoid overfitting. Model evaluation showed LSTM’s superior accuracy, achieving an MAE of $13.66 (82% lower than ARIMA) and a MAPE of 4.89%. The notebook includes visualizations of predicted versus actual prices, a detailed model comparison, and saving the best LSTM model (best_lstm_model.keras) along with its scaler for deployment. Key insights emphasize LSTM’s strength in capturing TSLA’s non-linear price dynamics versus ARIMA’s interpretability but lower accuracy.
 
 ---
 
