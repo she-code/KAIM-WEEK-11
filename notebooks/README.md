@@ -33,3 +33,12 @@ This folder contains Jupyter notebooks illustrating the step-by-step process of 
 - Identified key levels: support/resistance zones
 - Saved results as TSLA_6mo_forecast.csv
 - Noted model limitations for risk awareness
+
+### 4_Portfolio_Optimization.ipynb
+
+- Optimized TSLA/BND/SPY portfolio using MPT
+- Integrated LSTM forecast for TSLA expected returns
+- Calculated efficient frontier and covariance matrix
+- Identified max Sharpe (X% return) and min volatility portfolios
+- Visualized optimal allocations with Plotly
+- Exported weights (TSLA:X%, BND:Y%, SPY:Z%)
