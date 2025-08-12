@@ -42,3 +42,12 @@ This folder contains Jupyter notebooks illustrating the step-by-step process of 
 - Identified max Sharpe (X% return) and min volatility portfolios
 - Visualized optimal allocations with Plotly
 - Exported weights (TSLA:X%, BND:Y%, SPY:Z%)
+
+### 5_Strategy_Backtesting.ipynb
+
+- Backtested optimized portfolio vs 60/40 SPY/BND benchmark
+- Simulated performance using daily rebalancing
+- Calculated total returns and Sharpe ratios
+- Visualized growth curves (2024-2025)
+- Quantified outperformance: +X% vs benchmark
+- Saved comparative performance results
