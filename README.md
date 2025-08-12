@@ -22,6 +22,7 @@ KAIM-WEEK-11/
 │ └── 2_TSLA_Forecasting_Models.ipynb - builds and compares models 
 │ └── 3_TSLA_Future_Forecast_Analysis.ipynb - 6 months tsla forecast using LSTM  
 │ └── 4_Portfolio_Optimization.ipynb - profile optimization
+│ └── 5_Strategy_Backtesting.ipynb - strategy backtesting
 ├── scripts/
 │ └── README.md # Documentation for scripts
 ├── src/
@@ -67,6 +68,10 @@ Generated 6-month TSLA price forecasts using the trained LSTM model, starting fr
 ### ✅ Task 4: Optimize Portfolio Based on Forecast
 
 Optimized TSLA/BND/SPY allocations using Modern Portfolio Theory, integrating LSTM forecasts for TSLA with historical returns for BND/SPY. Calculated the efficient frontier to identify optimal portfolios - maximizing Sharpe ratio (targeting X% return) and minimizing volatility. Recommended balanced allocations (TSLA: X%, BND: Y%, SPY: Z%) with quantified risk/return metrics, exported for implementation. Noted limitations from relying solely on price-based optimization.
+
+### ✅ Task 5: Strategy Backtesting
+
+Simulated performance of the optimized portfolio (TSLA: X%, BND: Y%, SPY: Z%) against a 60/40 SPY/BND benchmark during 2024-2025. Implemented daily rebalancing to track portfolio growth, calculating key metrics including total returns (+X% vs benchmark) and risk-adjusted performance (Sharpe ratio: X). Visualized comparative results and quantified strategy effectiveness, providing empirical validation of the model-driven approach. Highlighted sensitivity to initial conditions and rebalancing frequency.
 
 ---
 
